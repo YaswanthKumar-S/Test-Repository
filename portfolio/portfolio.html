@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="port.css">
+    <title>My Profile</title>
+</head>
+<body style="background-image: url(port1.avif); background-repeat: no-repeat; background-size:cover;">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="hero">
+            <h2>Hello I'm Yaswanth Kumar S</h2>
+            <h2>I'm a Backend Developer</h2>
+        </div>
+    </header>
+
+    <section id="projects">
+        <h2>PROJECTS</h2>
+            <div class="project-card">
+            <h3>Project 1-BOOKRENT</h3>
+            <p>
+				Bookrent is an app that lets you rent books from other users in your area. You can browse through thousands of books in different genres, languages, and formats. You can also list your own books and earn money by renting them out. Bookrent is a great way to discover new books, share your passion, and save money on buying books.
+			<br>
+With Bookrent, you can:
+<br>
+Search for books by title, author, genre, or keyword
+View book details, ratings, reviews, and availability
+Request to rent a book from another user and pay securely through the app
+Chat with the book owner and arrange the pickup and return
+Rate and review the book and the owner after the rental
+Manage your own book collection and set your rental price and availability
+Track your rental history, earnings, and payments
+Bookrent is the ultimate app for book lovers. Download it today and start renting books!
+			</p>
+        </div></a>
+            <div class="project-card">
+            <h3>Project 2-Machine Learning Model</h3>
+            <p>*Bank Fraud Detection</p>
+        </div></a>
+    </section>
+    <section id="skill">
+        <h2>SKILLS</h2>
+        <div class="skill-card">
+            <h4>•Problem Solving using</h4>
+            <p>C++</p>
+            <p>Python</p>
+            <p>Java With OOPS</p>
+        </div>
+        <div class="skill-card">
+            <h4>•Web Designing using</h4>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>React JS</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <script src="portfoliojs.js"></script>
+</body>
+</html>
