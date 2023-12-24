@@ -1,0 +1,111 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 600px;
+    margin-top: 200px;
+    background: white;
+    padding-bottom: 30px;
+    border-radius: 50px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top:30px;
+}
+
+.text{
+    color: black;
+    font-size: 48px;
+    font-weight: 700;
+}
+.underline{
+    width: 61px;
+    height: 6px;
+    background:red;
+    border-radius: 9px;
+}
+.inputs{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input img{
+    height: 50px;
+    margin: 0px 30px;
+}
+.input{
+    display: flex;
+    flex-direction: auto;
+    align-items: center;
+    color: transparent;
+   
+}
+.signup p{
+    text-align: center;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 0px 0px;
+}
+.input input{
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 19px;
+}
+.forgotpassword{
+    padding-left:62px;
+    margin-top: 27px;
+    color: #797979;
+    font-size: 18px;
+}
+.forgotpassword p{
+    text-align: center;
+}
+
+.forgotpassword span{
+    color: #4c00b4;
+    cursor:pointer ;
+}
+
+.sumbit-container
+{
+    display: flex;
+    gap: 30px;
+    margin: 60px auto;   
+}
+#eye {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.sumbit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+    }
+    .gray:hover{transform: scale(1.25)}
+    
