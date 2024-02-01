@@ -1,0 +1,61 @@
+#include<bits/stdc++.h>
+using namespace std;
+int precedence(char symbol)
+{
+	if(symbol=='^')
+		return 3;
+	else if(symbol=='*'||symbol=='/')
+		return 2;
+	else if(symbol=='+'||symbol=='-')
+		return 1;
+	else
+		return 0;
+}
+void infixtopostfix()
+{
+	stack<char> s;
+	string expr1,expr2;
+	char c;
+	int i;
+	cout<<"enter infix expression";
+	cin>>expr1;
+    for(i=0;i<expr1.length();i++)
+	{
+		c=expr1[i];
+		if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
+			expr2+= c;
+		else if(c == '(')
+			s.push('(');
+		else if(c == ')') 
+		{
+			while(s.top() != '(')
+			{
+				expr2 += s.top();
+				s.pop();
+			}
+			s.pop();
+		}
+		else 
+		{
+			while(!s.empty()&& precedence(expr1[i]) <= precedence(s.top())) 
+			{
+				expr2 +=s.top(); 
+				s.pop();	
+			}
+			s.push(c);
+		}
+	}
+
+	while(!s.empty()) 
+	{
+		expr2 += s.top();
+		s.pop();
+	}
+	cout << expr2 ;
+}
+int main()
+{
+	infixtopostfix();
+	return 0;
+}
+	
